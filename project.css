@@ -1,0 +1,499 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Pushes the divs to opposite ends */
+    align-items: center; /* Centers the divs vertically */
+    height: 100vh; /* Makes the container full height */
+}
+.container-about {
+    display: flex;
+    text-decoration-color: azure;
+    justify-content: space-between; /* Pushes the divs to opposite ends */
+    align-items: center; /* Centers the divs vertically */
+    height: 100vh; /* Makes the container full height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: rgb(29, 28, 37);
+    
+}
+    .container-about:hover {
+        transform: scale(1.1); /* Slightly enlarge the container */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Add a stronger shadow on hover */
+    }
+    
+
+.box {
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+   
+    border: 1px;
+    text-align: left;
+}
+
+.box1 {
+    width: 50%; /* Adjust the width as needed */
+   
+    padding: 5px;
+   background-color: rgb(139, 38, 53);
+    border: 1px;
+    text-align: left;
+}
+.box2 {
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+   background-color: rgb(139, 38, 53) ;
+    border: 1px;
+    text-align: left;
+}
+.box3{
+    padding-left: 10%;
+}
+.left {
+    background-color: lightcoral;
+}
+
+/* Style for the right box with the image */
+.box.right {
+    display: flex;
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image */
+    height: 300px; /* Fixed height for the div */
+    background-color:  brown; /* Optional background for visibility */
+    width: 100%; /* Ensure the right box takes the full width available */
+}
+
+.box.right img {
+    max-width: 80%; /* Image scales down to 80% of the container width */
+    max-height: 80%; /* Image scales down to 80% of the container height */
+    object-fit: contain; /* Maintains the aspect ratio */
+}
+
+/* Container for the skill buttons */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next line if needed */
+    gap: 10px; /* Space between buttons */
+    padding: 20px;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Style for individual buttons */
+.skill-button {
+    padding: 10px 20px;
+    background-color: black; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    text-transform: uppercase; /* Capitalize text */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for buttons */
+.skill-button:hover {
+    background-color:brown; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly increase size */
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    gap: 40px; /* Add space between cards */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px;
+    
+}
+
+/* Individual card styling */
+.card {
+    background-color:rgb(46, 42, 50); /* Light background */
+    border: 1px solid black; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center-align text */
+    padding: 10px;
+    width: 12rem; /* Set consistent width for all cards */
+    
+}
+
+/* Icon styling */
+.card i {
+    font-size: 2rem; /* Large icons */
+    color: brown; /* Blue color for icons */
+    margin-bottom: 8px; /* Space below icon */ 
+   
+}
+
+/* Card text */
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: white; /* Dark text color */
+}
+
+/* Bold heading in card text */
+.card-text b {
+    font-size: 1rem;
+    color: white; /* Slightly darker color for emphasis */
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: brown; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.download-btn:hover {
+    background-color: black; /* Darker blue on hover */
+    color: white; /* Ensure text remains white */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 0vh; /* Full height of the viewport */
+}
+
+.about-container {
+    display: flex; /* Arrange items in a row */
+    align-items: left; /* Vertically align items */
+    justify-content: left; /* Center-align the content horizontally */
+    gap: 10px; /* Add space between the heading and the icon */
+    margin: 20px 0; /* Add some spacing around the container */
+}
+
+.about-container h4 {
+    font-size: 1.2rem; /* Adjust heading size */
+    color: white; /* Set a dark color for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+.play-icon {
+    color: brown; /* Set icon color to brown */
+    font-size: 1.5rem; /* Adjust icon size */
+    vertical-align: left; /* Align the icon properly with text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+footer {
+    background-color: black; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+}
+
+/* Left logo styling */
+.footer-logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #392d2d; /* White color */
+    text-decoration: none;
+}
+
+/* Social media icons styling */
+.social-icons {
+    display: flex;
+    gap: 25px; /* Space between icons */
+}
+
+.social-icons a {
+    color: #fff; /* White color for icons */
+    font-size: 1rem; /* Icon size */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    color: brown; /* brown color on hover */
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stacks the text and button vertically */
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    height: 50vh; /* Makes the container full height */
+    text-align: center; /* Centers text inside the container */
+    padding: 20px;
+    
+    background-color: rgb(29, 28, 37);
+}
+
+.text-left {
+    font-size: 1.2rem; /* Adjust text font size */
+    margin-bottom: 20px; /* Space between text and button */
+    color: white; /* Text color */
+}
+
+.my-button {
+    font-size: 1.2rem; /* Button font size */
+    padding: 10px 20px; /* Button padding */
+    background-color: #dc3545; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.my-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+
+
+
+/*--------resume html--------*/
+/* General Column Styling */
+.col {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 28, 37);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Image Container with Circular Background */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color:rgb(139, 38, 53);
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 0.5px;
+    border:#fff ,50%;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Text and Contact Info */
+.text-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Gap Between Columns */
+.gap-between {
+    margin-right: 40px;
+}
+
+/* Combined Columns */
+.combined-columns {
+    flex: 2;
+    background-color: rgb(29, 28, 37); /* Example background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    
+}
+
+.split-container {
+    display: flex;
+    width: 100%; /* Full width of the column */
+    
+}
+
+.left-half, .right-half {
+    flex: 1; /* Divide the container into two equal halves */
+    padding: 20px;
+}
+
+.left-half {
+    text-align: left; /* Center-align text in the left half */
+    border-right: 2px solid #ccc;
+}
+
+.right-half {
+    text-align: left; /* Center-align text in the right half */
+}
+.resume-tag {
+    background-color:rgb(139, 38, 53); /* Brown color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding for the tag */
+    border-radius: 0px; /* Rounded corners */
+    font-size: 1.4rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Make it fit the text size */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contact Page Section */
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(29, 28, 37);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading */
+.contact-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-page p {
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(139, 38, 53);
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color:white;
+}
+
+.contact-info b {
+    color: white;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color:rgb(139, 38, 53); /* Brown color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color:rgb(139, 38, 53); /* Darker brown */
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: rgb(139, 38, 53);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: rgb(139, 38, 53); /* Darker brown */
+}
+/* About Me Section */
+.about-me-section {
+    background-color: rgb(29, 28, 37); /* Light gray background */
+    padding: 40px 20px; /* Add padding around the section */
+    text-align: center; /* Center-align the content */
+  }
+  
+  .about-me-container {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 0 auto; /* Center the container horizontally */
+    font-family: Arial, sans-serif; /* Use a clean, professional font */
+  }
+  
+  .about-me-container h2 {
+    font-size: 2.5rem; /* Large heading size */
+    color: rgb(139, 38, 53); /* Brown color for heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .about-me-container p {
+    font-size: 1.2rem; /* Standard text size */
+    line-height: 1.8; /* Increase line spacing for readability */
+    color: white; /* Dark text color */
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+  }
+  
+  .about-me-container .highlight {
+    color: white; /* Highlight color for name */
+    font-weight: bold; /* Make the name stand out */
+  }
+  
+  .about-me-container .cta {
+    font-size: 1.3rem; /* Slightly larger for the call-to-action */
+    font-weight: bold; /* Make it bold for emphasis */
+    color: #007bff; /* Blue color for the call-to-action */
+    margin-top: 20px; /* Add spacing above the CTA */
+  }
+  
